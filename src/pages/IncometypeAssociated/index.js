@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-01 17:01:29
- * @LastEditTime: 2023-03-12 14:29:09
+ * @LastEditTime: 2023-04-13 10:09:28
  * @LastEditors: 韩宏广
- * @FilePath: /Financial/web/src/pages/IncometypeAssociated/index.js
+ * @FilePath: \web\src\pages\IncometypeAssociated\index.js
  * @文件说明: 
  */
 import { Space, Table, Row, Col, Button, Modal, Form, Input, message, Select, Popconfirm } from 'antd';
@@ -38,18 +38,18 @@ const IncometypeAssociated = () => {
   //   ]
   // )
   const tableData = [
-    {
-      key: '1',
-      billincomename: '胡彦斌',
-      age: 32,
-      incomtypename: '西湖区湖底公园1号',
-    },
-    {
-      key: '2',
-      billincomename: '胡彦祖',
-      age: 42,
-      incomtypename: '西湖区湖底公园1号',
-    },
+    // {
+    //   key: '1',
+    //   billincomename: '胡彦斌',
+    //   age: 32,
+    //   incomtypename: '西湖区湖底公园1号',
+    // },
+    // {
+    //   key: '2',
+    //   billincomename: '胡彦祖',
+    //   age: 42,
+    //   incomtypename: '西湖区湖底公园1号',
+    // },
   ]
 
   useEffect(() => {
