@@ -9,8 +9,8 @@
 
 //取localstorage
 export function getLocalStorage(key) {
-  return window.localStorage.getItem(key)
-  // return JSON.parse(window.localStorage.getItem(key))  
+  // return window.localStorage.getItem(key)
+  return JSON.parse(window.localStorage.getItem(key))  
 }
 //存localstorage
 export function setLocalStorage(key, value) {

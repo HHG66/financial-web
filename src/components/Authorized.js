@@ -1,9 +1,9 @@
 /*
  * @Author: HHG
  * @Date: 2022-09-16 16:37:52
- * @LastEditTime: 2022-12-20 13:19:19
+ * @LastEditTime: 2023-05-15 11:20:46
  * @LastEditors: 韩宏广
- * @FilePath: \my-financial\web\src\components\Authorized.js
+ * @FilePath: \web\src\components\Authorized.js
  * @文件说明: 
  */
 import { Navigate } from 'react-router-dom'
@@ -11,7 +11,7 @@ import { getLocalStorage } from '@/utils'
 // import { useLocation } from 'react-router-dom'
 const Authorized = ({ children }) => {
   // const { pathname } = useLocation()
-  if (getLocalStorage("Token")) {
+  if (getLocalStorage("Token") && getLocalStorage("Token") !== "") {
     // console.log(pathname);
     // console.log(getLocalStorage("linearAsyncRou"));
     // var isrouter = {}
@@ -25,8 +25,8 @@ const Authorized = ({ children }) => {
     // if (Object.keys(isrouter).length === 0) {
     //   return  <Navigate to="/login" replace />
     // } else {
-      // console.log(children);
-      return <>{children}</>
+    // console.log(children);
+    return <>{children}</>
     // }
   } else {
     return <Navigate to="/login" replace />

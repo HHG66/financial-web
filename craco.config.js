@@ -64,7 +64,8 @@ module.exports = {
   devServer: {
     proxy: {
       '/proxy': {
-        target: 'http://127.0.0.1:3000',
+        // target: 'http://127.0.0.1:3000',
+        target: 'http://127.0.0.1:4523/m1/1605761-0-default',
         timeout: 30000,
         changeOrigin: true,
         pathRewrite: {
